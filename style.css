@@ -16,9 +16,9 @@ body {
     margin: 0 auto;
 }
 
-div.header {
-    background-image: url("images/sakura.jpg");
-    padding: 25px;
+#header img {
+    width: 100%;
+    height: auto;
 }
 
 .site-title a{
