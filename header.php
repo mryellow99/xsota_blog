@@ -23,7 +23,7 @@ if ( ! empty( $header_image ) ) : ?>
 <? else : ?>
 <div id="header">
   <img src="<?php echo get_template_directory_uri().'/images/defalut_header.jpg' ?>" alt="<?php bloginfo('name'); ?>" />
-  <h1 class="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+<!--  <h1 class="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>-->
 </div>
 <?php endif; ?>
 <div class="nav">
