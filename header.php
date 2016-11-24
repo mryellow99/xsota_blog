@@ -18,7 +18,7 @@
 if ( ! empty( $header_image ) ) : ?>
 <div id="header">
   <img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>"  />
-  <h1 class="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+<!--  <h1 class="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1> -->
 </div>
 <? else : ?>
 <div id="header">
