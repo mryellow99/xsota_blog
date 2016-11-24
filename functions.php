@@ -76,5 +76,15 @@ add_action('widgets_init',create_function('', 'return register_widget("My_Widget
 /* アイキャッチ画像 */
 add_theme_support( 'post-thumbnails' );
 
+/* カスタムヘッダー */
+$custom_header_defaults = array(
+    'default-image'          => get_template_directory_uri().'/images/defalut_header.jpg',
+    'width'                  => 1920,
+    'flex-width'             => true,
+    'height'                 => 180,
+    'flex-height'            => true,
+    'header-text'            => true,//ヘッダー画像上にテキストをかぶせる
+);
+add_theme_support( 'custom-header', $custom_header_defaults );
 
 ?>
