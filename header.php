@@ -13,11 +13,19 @@
 
 <body <?php body_class(); ?>>
 <header>
-<div class="header">
-<h1 class="site-title">
-<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-</h1>
+<!-- custom header -->
+<?php $header_image = get_header_image(); 
+if ( ! empty( $header_image ) ) : ?>
+<div id="header">
+  <img src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>"  />
+  <h1 class="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 </div>
+<? else : ?>
+<div id="header">
+  <img src="<?php echo get_template_directory_uri().'/images/defalut_header.jpg' ?>" alt="<?php bloginfo('name'); ?>" />
+  <h1 class="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+</div>
+<?php endif; ?>
 <div class="nav">
 <?php wp_nav_menu(); ?>
 </div>
