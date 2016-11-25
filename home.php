@@ -19,9 +19,13 @@ if ( have_posts() ) {
         echo "<p>".mb_substr(strip_tags($post-> post_content),0,60)."..."."</p>";
         echo "</div>";
 		echo "</div></a>";
-	}
+	}   
 } else {
 	echo wpautop( '投稿が見つかりませんでした。' );
+}
+
+if (function_exists("pagination")) {
+    pagination($additional_loop->max_num_pages);
 }
 
 echo "</article>";
