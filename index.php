@@ -1,5 +1,6 @@
 <?php
 get_header();
+echo "<div class=\"main\">";
 echo "<article class=\"left\">";
 if ( have_posts() ) {
 	while ( have_posts() ) {
@@ -18,5 +19,6 @@ if ( have_posts() ) {
 }
 echo "</article>";
 get_sidebar();
+echo "</div>";
 get_footer();
 ?>
