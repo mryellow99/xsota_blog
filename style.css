@@ -21,13 +21,13 @@ body { margin: 0; background-color: #f5f5f5; }
 
 /** grobal menu **/
 .nav { background: #333; }
-.nav ul { *zoom: 1; list-style-type: none; width: 960px; margin: 5px auto 30px; padding: 0; }
+.nav ul { *zoom: 1; display: flex; list-style-type: none; width: 960px; margin: 0px auto 30px; }
 .nav ul:before, .nav ul:after { content: ""; display: table; }
 .nav ul:after { clear: both; }
-.nav ul li { position: relative; width: 20%; float: left; margin: 0; padding: 0; text-align: center; }
+.nav ul li { position: relative; width: 20%; margin: 0; padding: 0; align-items: center; justify-content: space-around; }
 .nav ul li a { color: #fff; background-color: #333; display: block; margin: 0; padding: 15px 0 11px; font-size: 14px; line-height: 1; text-decoration: none; }
 .nav ul li:hover ul { top: 100%; visibility: visible; opacity: 1; }
-.nav ul li ul { list-style: none; position: absolute; z-index: 9999; top: 100%; left: 0; margin: 0; padding: 0; opacity: 0; top: 50%; visibility: hidden; transition: .5s; }
+.nav ul li ul { list-style: none; position: absolute; z-index: 3; width: 100%; top: 100%; left: 0; margin: 0; padding: 0; opacity: 0; top: 50%; visibility: hidden; transition: .5s; }
 .nav ul li ul li { width: 100%; }
 .nav ul li ul li a { padding: 13px 15px; border-top: 1px solid #888; background: #666; text-align: left; }
 .nav ul li ul li a:hover { background: #666; }
