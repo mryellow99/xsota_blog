@@ -21,6 +21,9 @@ body {
     width: 70%;
     margin-left: auto;
     padding: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 .right {
     width: 26%;
@@ -114,10 +117,14 @@ body {
 
 /*** home ***/
 .home .left {
+  .card {
+    display: flex;
+    flex-flow: column wrap;
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
   a {
     display: block;
-    width: 48%;
-    float: left;
+    width: 100%;
     margin: 1%;
     text-decoration: none;
     color: #333;
@@ -134,23 +141,30 @@ body {
       height: 180px;
   }
 }
+}
 
 .post_heading {
     background: #fff;
     padding: 10px;
     margin-top: -5px;
     height: 135px;
-}
-.post_heading h3{
-    margin: 0;
-}
-.post_heading p{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    h2.post_title {
+      margin: 0;
+      font-size: 20px;
+    }
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
 }
 
-/** single **/
-.single .main {
-  background: #fff;
+/** single, page **/
+.single, .page {
+  .main {
+    background: #fff;
+    .left article{
+      width: 100%;
+    }
+  }
 }
