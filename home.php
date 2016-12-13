@@ -6,7 +6,7 @@ if ( have_posts() ) {
 	while ( have_posts() ) {
 		the_post();
         $link = get_permalink();
-		echo "<a href=\"{$link}\"><div>";
+		echo "<div class=\"card\"><a href=\"{$link}\">";
         if ( has_post_thumbnail() ) {
 		  the_post_thumbnail();
         } else {
@@ -15,11 +15,11 @@ if ( have_posts() ) {
         }
         $title = get_the_title();
         echo "<div class=\"post_heading\">";
-        echo "<h3>".$title."</h3>";
+        echo "<h2 class=\"post_title\">".$title."</h2>";
         echo "<p>".mb_substr(strip_tags($post-> post_content),0,60)."..."."</p>";
         echo "</div>";
-		echo "</div></a>";
-	}   
+		echo "</a></div>";
+	}
 } else {
 	echo wpautop( '投稿が見つかりませんでした。' );
 }
