@@ -10,7 +10,7 @@ if ( have_posts() ) {
 		the_post_thumbnail();
 	}*/
         $title = get_the_title();
-        echo "<h3>".$title."</h3>";
+        echo "<h1>".$title."</h1>";
 		echo the_content();
 		echo "</article>";
 	}
