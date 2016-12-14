@@ -10,7 +10,9 @@ if ( have_posts() ) {
 		the_post_thumbnail();
 	}*/
         $title = get_the_title();
+				$date = get_the_time('Y/m/d');
         echo "<h1>".$title."</h1>";
+				echo "<p class=\"post_date\">".$date."</p>";
 		echo the_content();
 		echo "</article>";
 	}
