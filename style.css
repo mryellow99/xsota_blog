@@ -15,8 +15,11 @@ h1, h2, h3, h4, h5 { font-weight: normal; }
 
 .left { width: 70%; margin-left: auto; padding: 1%; display: flex; flex-flow: row wrap; justify-content: space-around; }
 
+/* sidebar */
 .right { width: 26%; margin-right: auto; padding: 1%; }
-.right h4 { background: #333; color: #fff; padding: 8px 10px; margin: 6px 0px; }
+.right div { background: #fff; }
+.right div h4 { background: #333; color: #fff; padding: 8px 10px; margin: 6px 0px; }
+.right div ul { padding: 10px 30px 30px; list-style: none; }
 
 /*** header ***/
 #header img { width: 100%; height: auto; }
@@ -49,7 +52,25 @@ h1, h2, h3, h4, h5 { font-weight: normal; }
 /** single, page **/
 .single .main .left, .page .main .left { background: #fff; }
 .single .main .left article, .page .main .left article { width: 100%; }
-.single .main .left h1, .page .main .left h1 { margin: 0; padding: 10px 0px; font-size: 28px; }
+.single .main .left h1, .page .main .left h1 { margin: 0; padding: 10px 0px; font-size: 28px; font-weight: bold; /*position: relative;
+&:before, &:after {
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	content: '';
+	height: 4px;
+}
+&:before {
+	z-index: 2;
+	width: 15%;
+	background-color: #444;
+}
+&:after {
+	width: 100%;
+	background: -webkit-repeating-linear-gradient(45deg, #fff, #fff 2px, #aaa 2px, #aaa 4px);
+	background: repeating-linear-gradient(45deg, #fff, #fff 2px, #aaa 2px, #aaa 4px);
+}*/ }
 .single .main .left h2, .page .main .left h2 { margin: 0; padding: 10px 0px; font-size: 24px; }
+.single .main .left .post_date, .page .main .left .post_date { text-align: right; }
 
 /*# sourceMappingURL=style.css.map */
