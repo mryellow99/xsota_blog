@@ -15,7 +15,7 @@ if ( have_posts() ) {
         echo "<h1>".$title."</h1>";
 				echo "<p class=\"post_date\">".$date."</p>";
 				the_category(', ');
-				the_tags( '<ul><li>', '</li><li>', '</li></ul>' );
+				the_tags( '<ul class="tags"><li>', '</li><li>', '</li></ul>' );
 		echo the_content();
 		echo "</article>";
 	}
