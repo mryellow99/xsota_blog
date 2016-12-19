@@ -11,8 +11,11 @@ if ( have_posts() ) {
 	}*/
         $title = get_the_title();
 				$date = get_the_time('Y/m/d');
+
         echo "<h1>".$title."</h1>";
 				echo "<p class=\"post_date\">".$date."</p>";
+				the_category(', ');
+				the_tags( '<ul><li>', '</li><li>', '</li></ul>' );
 		echo the_content();
 		echo "</article>";
 	}
