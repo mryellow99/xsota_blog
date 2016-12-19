@@ -62,8 +62,7 @@ h1, h2, h3, h4, h5 {
         display: flex;
         list-style-type: none;
         width: 960px;
-        margin: 0px auto 30px;
-        //padding: 0;
+        margin: -6px auto 30px;
         &:before, &:after{
             content: "";
             display: table;
