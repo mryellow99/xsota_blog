@@ -232,6 +232,25 @@ ul.tags {
     }
   }
 }
+/* pagenation */
+a.page-numbers, span.page-numbers.current {
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 10px 3px 16px;
+}
+span.page-numbers.current{
+  background: #ddd;
+  color: #666;
+}
+a.page-numbers {
+  text-decoration: none;
+  background: #666;
+  color: #ededed;
+  &:hover {
+    background: #ddd;
+    color: #666;
+  }
+}
 
 /* footer */
 footer {

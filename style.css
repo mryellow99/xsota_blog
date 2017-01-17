@@ -78,6 +78,14 @@ ul.tags { list-style: none; display: table; padding: 0; }
 ul.tags li { display: table-cell; }
 ul.tags li a { padding: 8px; margin: 5px; text-decoration: none; font-size: 12px; color: #888; background: #ededed; border-radius: 2px; }
 
+/* pagenation */
+a.page-numbers, span.page-numbers.current { display: inline-block; padding: 4px 10px; margin: 10px 3px 16px; }
+
+span.page-numbers.current { background: #ddd; color: #666; }
+
+a.page-numbers { text-decoration: none; background: #666; color: #ededed; }
+a.page-numbers:hover { background: #ddd; color: #666; }
+
 /* footer */
 footer { display: flex !important; background: #333; color: #fff; }
 footer p { margin: 15px auto 30px; }
