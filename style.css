@@ -79,6 +79,7 @@ ul.tags li { display: table-cell; }
 ul.tags li a { padding: 8px; margin: 5px; text-decoration: none; font-size: 12px; color: #888; background: #ededed; border-radius: 2px; }
 
 /* footer */
-footer { display: flex !important; background: #333; }
+footer { display: flex !important; background: #333; color: #fff; }
+footer p { margin: 15px auto 30px; }
 
 /*# sourceMappingURL=style.css.map */

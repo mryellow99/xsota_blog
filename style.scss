@@ -237,4 +237,8 @@ ul.tags {
 footer {
   display: flex !important;
   background: #333;
+  color: #fff;
+  p {
+    margin: 15px auto 30px;
+  }
 }
